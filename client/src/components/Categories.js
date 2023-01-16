@@ -33,7 +33,7 @@ const Categories = () => {
      <Grid container spacing={2}>
         {
             numberOfItems.map((items, i) => (
-            <Grid item sm={4} md={3}>
+            <Grid key={i} item sm={4} md={3}>
                 <Card sx={{ maxWidth: 345, minWidth:210 }}>
                     <CardMedia
                         sx={{ height: 140, display: { xs: 'none', sm: 'none', md: 'block' } }}

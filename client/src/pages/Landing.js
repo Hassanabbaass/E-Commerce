@@ -2,8 +2,6 @@ import React from 'react'
 import All from '../components/All'
 import Categories from '../components/Categories'
 import ContactUs from '../components/ContactUs'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
 import Welcome from '../components/Welcome'
 
 
@@ -27,7 +25,6 @@ const sectionStyle3 = {
 const Landing = () => {
   return (
     <div>
-        <Navbar/>
 
         <div style={sectionStyle} id='Home' >
             <Welcome/>
@@ -44,8 +41,7 @@ const Landing = () => {
         <div style={sectionStyle3} id='Contact Us' >
             <ContactUs/>
         </div>
-
-        <Footer/>
+ 
     </div>
   )
 }

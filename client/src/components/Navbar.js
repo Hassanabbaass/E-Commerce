@@ -13,9 +13,10 @@ import MenuItem from '@mui/material/MenuItem';
 import StoreIcon from '@mui/icons-material/Store';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import {Link} from 'react-scroll';
+import {Link as RouterLink} from 'react-router-dom';
 
 const pages = ['Home', 'All', 'Categories', 'Contact Us'];
-const settings = ['Sign Up', 'Sign In'];
+const settings = ['Register / Login'];
 
 const Navbar = () => {
 
@@ -154,7 +155,9 @@ const Navbar = () => {
             >
                 {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
+                    <RouterLink style={{textDecoration: 'none', color:'black'}} to='/LoginRegister'>
+                        <Typography textAlign="center">{setting}</Typography>
+                    </RouterLink>
                 </MenuItem>
                 ))}
             </Menu>

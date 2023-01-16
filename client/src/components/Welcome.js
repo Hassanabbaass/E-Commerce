@@ -47,7 +47,7 @@ const Welcome = () => {
         <Grid lg={6} md={8}>
             <div style={WelcomeDiv}>
                 <h1 style={WelcomeTitle}>Welcome To Bonelle E-Commerce</h1>
-                <Button style={WelcomeButton} variant="contained">Get Started</Button>
+                <Button href='/loginregister' style={WelcomeButton} variant="contained">Get Started</Button>
                 <p style={WelcomeParagraph}>
                     Welcome to my ecommerce website! Here, you can browse and purchase a variety of products.
                     I built this website using the MERN stack (MongoDB, Express, React, and Node.js)
