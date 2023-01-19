@@ -1,2 +1,2 @@
 # E-Commerce
-New E-commerce Website coming on the way!
+This Project is on hold!
